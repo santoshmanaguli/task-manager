@@ -20,4 +20,8 @@ export class TaskListComponent implements OnInit {
       this.tasks = tasks
     })
   }
+
+  onCompleteTask(taskID: number){
+    this.taskService.completeTask(taskID)
+  }
 }

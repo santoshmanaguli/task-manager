@@ -1,0 +1,12 @@
+.taskList{
+  text-decoration: none;
+
+}
+
+.taskTitle{
+  display: flex;
+}
+
+li{
+  list-style: none;
+}

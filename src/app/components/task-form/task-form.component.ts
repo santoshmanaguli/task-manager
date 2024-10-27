@@ -1,13 +1,27 @@
 import { Component } from '@angular/core';
 import { TaskService } from '../../services/task.service';
 import { Task } from '../../models/task.model';
-import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
+import {
+  FormBuilder,
+  FormGroup,
+  Validators,
+  ReactiveFormsModule,
+} from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { ButtonModule } from 'primeng/button';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { InputTextModule } from 'primeng/inputtext';
 
 @Component({
   selector: 'app-task-form',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [
+    ReactiveFormsModule,
+    CommonModule,
+    ButtonModule,
+    InputTextareaModule,
+    InputTextModule,
+  ],
   templateUrl: './task-form.component.html',
   styleUrl: './task-form.component.css',
 })
@@ -18,17 +32,17 @@ export class TaskFormComponent {
     this.taskForm = this.fb.group({
       title: ['', Validators.required],
       description: [''],
-    })
+    });
   }
 
-  onSubmit(){
-    if(this.taskForm.valid){
+  onSubmit() {
+    if (this.taskForm.valid) {
       const newTask: Task = {
         id: Math.random(),
         title: this.taskForm.value.title,
         description: this.taskForm.value.description,
         completed: false,
-      }
+      };
       this.taskService.addTask(newTask);
       this.taskForm.reset();
     }
