@@ -7,11 +7,11 @@ Building this project using
   4. Supabase for Backend and Database
 
 # Features
-  [] Basic CRUD
-  [] Integrating Backend and Database
-  [] Adding Folders based to-do items
-  [] Responsive App
-  [] Integrating Calendar
+ - [] Basic CRUD
+ - [] Integrating Backend and Database
+ - [] Adding Folders based to-do items
+ - [] Responsive App
+ - [] Integrating Calendar
 
 # TaskManager
 
