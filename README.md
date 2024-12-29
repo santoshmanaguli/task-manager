@@ -1,3 +1,18 @@
+# About
+
+Building this project using
+  1. Angular 18
+  2. RxJs
+  3. PrimeNg
+  4. Supabase for Backend and Database
+
+# Features
+  [] Basic CRUD
+  [] Integrating Backend and Database
+  [] Adding Folders based to-do items
+  [] Responsive App
+  [] Integrating Calendar
+
 # TaskManager
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
