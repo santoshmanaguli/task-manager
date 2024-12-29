@@ -1,13 +1,21 @@
-<h2>Add Task</h2>
-<form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
-  <label for="title">Title</label><br />
-  <input type="text" pInputText id="title" formControlName="title" />
-  <br />
-  <br />
-  <label for="description">Description</label><br />
-  <textarea id="description" rows="5" cols="30" pInputText formControlName="description" ></textarea>
+<div>
+  <h2 style="text-align: center">Add Task</h2>
+  <form style="margin: 0;justify-content: center;display: grid;" [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+    <label for="title">Title</label><br />
+    <input type="text" pInputText id="title" formControlName="title" />
+    <br />
+    <br />
+    <label for="description">Description</label><br />
+    <textarea
+      id="description"
+      rows="5"
+      cols="30"
+      pInputText
+      formControlName="description"
+    ></textarea>
 
-  <br>
-  <br>
-  <p-button label="Add Task" type="submit "></p-button>
-</form>
+    <br />
+    <br />
+    <p-button label="Add Task" type="submit "></p-button>
+  </form>
+</div>

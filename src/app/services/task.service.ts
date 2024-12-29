@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Task } from '../models/task.model';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -12,6 +12,8 @@ export class TaskService {
   private tasks: Task[] = [
     { id: 1, title: 'Task 1', description: 'Description 1', completed: false },
     { id: 2, title: 'Task 2', description: 'Description 2', completed: false },
+    { id: 1, title: 'Task 1', description: 'Description 1', completed: true },
+    { id: 2, title: 'Task 2', description: 'Description 2', completed: true },
   ];
 
   constructor() {

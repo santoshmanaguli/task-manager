@@ -1,0 +1,12 @@
+.container{
+  width: 100%;
+  display: flex;
+}
+
+.task-list{
+  width: 50%;
+}
+
+.task-form{
+  width: 50%;
+}
